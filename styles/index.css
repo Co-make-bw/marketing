@@ -137,7 +137,7 @@ h2 {
   font-size: 3.5rem;
 }
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 button {
   background-color: lightgrey;
@@ -150,28 +150,43 @@ header {
 header i {
   color: white;
 }
-* {
-  border: 1px solid red !important;
-}
-header {
+header .flexed {
+  white-space: pre;
   display: flex;
-  justify-content: space-around;
   align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .flexed .fas {
+  color: white;
+}
+header .flexed div {
+  font-size: 4rem;
+}
+header .flexed .breaker {
+  width: 0px;
+  flex-basis: 100%;
+  height: 0px;
+  background-color: red;
+}
+header .flexed a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  padding: 0 5rem;
+}
+header .flexed a a:active {
+  color: white;
+}
+header .flexed a a:visited {
+  color: white;
+}
+header img {
+  width: 100%;
 }
 nav {
   display: flex;
   justify-content: space-between;
-}
-a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: white;
-}
-a a:active {
-  color: white;
-}
-a a:visited {
-  color: white;
 }
 a:hover {
   font-size: 2.1rem;
