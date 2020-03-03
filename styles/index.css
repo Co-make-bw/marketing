@@ -169,25 +169,32 @@ header .flexed .breaker {
   height: 0px;
   background-color: red;
 }
+header .flexed nav {
+  display: flex;
+  justify-content: space-between;
+}
 header .flexed a {
   font-size: 2rem;
   text-decoration: none;
   color: white;
   padding: 0 5rem;
 }
-header .flexed a a:active {
+header .flexed a:visited {
   color: white;
 }
-header .flexed a a:visited {
+header .flexed a:active {
   color: white;
+}
+header .flexed a:hover {
+  font-size: 2.1rem;
 }
 header img {
   width: 100%;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
+.bodycontainer {
+  max-width: 97%;
+  margin: auto;
 }
-a:hover {
-  font-size: 2.1rem;
+.bodycontainer .headline {
+  padding: 20rem;
 }
