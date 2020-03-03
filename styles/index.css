@@ -144,16 +144,14 @@ button {
   font-size: 2rem;
   padding: 10px;
 }
+* {
+  border: 1px solid red !important;
+}
 header {
   background-color: green;
 }
 header i {
   color: white;
-}
-@media (max-width: 600px) {
-  header {
-    background-color: red;
-  }
 }
 header .flexed {
   white-space: pre;
@@ -181,7 +179,7 @@ header .flexed a {
   font-size: 2rem;
   text-decoration: none;
   color: white;
-  padding: 0 5rem;
+  padding: 0 3rem;
 }
 header .flexed a:visited {
   color: white;
@@ -190,7 +188,7 @@ header .flexed a:active {
   color: white;
 }
 header .flexed a:hover {
-  font-size: 2.1rem;
+  font-size: 2.15rem;
 }
 header img {
   width: 100%;
@@ -256,8 +254,26 @@ body .bodycontainer a button {
 body .bodycontainer a button:hover {
   color: grey;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   header {
-    background-color: purple;
+    background-color: orange;
+  }
+  header .flexed div {
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+  }
+  header .flexed nav {
+    width: 100%;
+  }
+  header .flexed nav a {
+    font-size: 1rem;
+    padding: 0 auto;
+  }
+  header .flexed nav a:hover {
+    font-size: inherit;
+  }
+  header .fas {
+    text-align: center;
   }
 }

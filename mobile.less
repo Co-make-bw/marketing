@@ -1,6 +1,32 @@
-header {
+@media(@mobile) {
+  header {
+    background-color: orange;
 
-  @media(max-width:600px) {
-    background-color: purple
+    .flexed {
+      div {
+        font-size : 2rem;
+        text-align: center;
+        margin    : auto;
+      }
+
+      nav {
+        width:100%;
+        a {
+          font-size: 1rem;
+          padding  : 0 auto;
+
+        }
+
+        a:hover {
+          font-size: inherit;
+        }
+      }
+    }
+
+    .fas {
+      text-align: center;
+    }
+
   }
+
 }
