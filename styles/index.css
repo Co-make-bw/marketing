@@ -232,3 +232,22 @@ header .themespace {
 .bodycontainer section:nth-child(odd) img {
   padding: 0 4rem 0 0;
 }
+.bodycontainer .btn {
+  text-align: center;
+  margin: auto;
+}
+.bodycontainer a {
+  text-align: center;
+  margin: auto;
+}
+.bodycontainer a button {
+  color: white;
+  padding: 15px 25px;
+  background-color: green;
+  border-radius: 15px;
+  text-align: center;
+  margin: auto;
+}
+.bodycontainer a button:hover {
+  color: grey;
+}
