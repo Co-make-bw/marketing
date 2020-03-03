@@ -253,6 +253,10 @@ body .bodycontainer a button:hover {
   color: grey;
 }
 @media (max-width: 500px) {
+  body .bodycontainer {
+    max-width: 100%;
+    text-align: center;
+  }
   body header {
     background-color: orange;
   }
@@ -266,10 +270,10 @@ body .bodycontainer a button:hover {
   }
   body header .flexed nav a {
     font-size: 1rem;
-    padding: 0 auto;
+    padding: 0 3px;
   }
   body header .flexed nav a:hover {
-    font-size: inherit;
+    font-size: initial;
   }
   body header .fas {
     text-align: center;
@@ -277,7 +281,16 @@ body .bodycontainer a button:hover {
   body .bodycontainer section {
     flex-direction: column;
   }
+  body .bodycontainer section img {
+    padding: 0;
+  }
   body .bodycontainer section:nth-child(odd) {
     flex-direction: column;
   }
+  body .bodycontainer section:nth-child(odd) img {
+    padding: 0;
+  }
+}
+footer {
+  text-align: center;
 }

@@ -1,5 +1,9 @@
 @media(@mobile) {
   body {
+    .bodycontainer{
+      max-width:@bodywidthmobile;
+      text-align: center;
+    }
     header {
       background-color: orange;
 
@@ -15,12 +19,12 @@
 
           a {
             font-size: 1rem;
-            padding  : 0 auto;
+            padding  : 0 3px;
 
           }
 
           a:hover {
-            font-size: inherit;
+            font-size: initial;
           }
         }
       }
@@ -33,11 +37,20 @@
     .bodycontainer {
       section {
         flex-direction: column;
+        img{
+          padding:0;
+        }
       }
       section:nth-child(odd) {
         flex-direction: column;
+        img{
+          padding:0;
+        }
       }
     }
   }
 }
 
+footer{
+  text-align: center;
+}
