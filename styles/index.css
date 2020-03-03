@@ -167,7 +167,6 @@ header .flexed .breaker {
   width: 0px;
   flex-basis: 100%;
   height: 0px;
-  background-color: red;
 }
 header .flexed nav {
   display: flex;
@@ -191,6 +190,18 @@ header .flexed a:hover {
 header img {
   width: 100%;
 }
+header .themespace {
+  flex-basis: 100%;
+  height: 1rem;
+}
+.footer {
+  margin: 2rem 0 0 0;
+}
+.footer img {
+  width: 100%;
+  max-height: 150px;
+  opacity: 40%;
+}
 .bodycontainer {
   max-width: 97%;
   margin: auto;
@@ -200,7 +211,24 @@ header img {
 }
 .bodycontainer section {
   display: flex;
+  justify-content: space-between;
+  margin: 8rem 0;
+}
+.bodycontainer section div {
+  background-color: #ffffff;
+}
+.bodycontainer section img {
+  padding: 0 0 0 4rem;
+}
+.bodycontainer section h2 {
+  padding: 2rem 0;
 }
 .bodycontainer section:nth-child(odd) {
   flex-direction: row-reverse;
+}
+.bodycontainer section:nth-child(odd) div {
+  background-color: #e9e9e9;
+}
+.bodycontainer section:nth-child(odd) img {
+  padding: 0 4rem 0 0;
 }

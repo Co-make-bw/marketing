@@ -1,16 +1,36 @@
-.bodycontainer{
+.bodycontainer {
   max-width: @bodywidth;
-  margin:auto;
+  margin   : auto;
 
-  .headline{
-    padding:20rem;
+  .headline {
+    padding: 20rem;
   }
 
-  section{
-    display:flex;
+  section {
+    display        : flex;
+    justify-content: space-between;
+    margin         : 8rem 0;
+    div{
+    background-color:rgb(255, 255, 255);
+    }
+    img {
+      padding: 0 0 0 4rem;
+    }
+
+    h2{
+      padding:2rem 0;
+    }
 
   }
+
   section:nth-child(odd) {
-    flex-direction:row-reverse
+    flex-direction: row-reverse;
+    
+div{
+    background-color:rgb(233, 233, 233); //rgb(248, 241, 232);
+}
+    img {
+      padding: 0 4rem 0 0;
+    }
   }
 }
