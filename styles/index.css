@@ -198,3 +198,9 @@ header img {
 .bodycontainer .headline {
   padding: 20rem;
 }
+.bodycontainer section {
+  display: flex;
+}
+.bodycontainer section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
