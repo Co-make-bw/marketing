@@ -1,32 +1,43 @@
 @media(@mobile) {
-  header {
-    background-color: orange;
+  body {
+    header {
+      background-color: orange;
 
-    .flexed {
-      div {
-        font-size : 2rem;
+      .flexed {
+        div {
+          font-size : 2rem;
+          text-align: center;
+          margin    : auto;
+        }
+
+        nav {
+          width: 100%;
+
+          a {
+            font-size: 1rem;
+            padding  : 0 auto;
+
+          }
+
+          a:hover {
+            font-size: inherit;
+          }
+        }
+      }
+
+      .fas {
         text-align: center;
-        margin    : auto;
-      }
-
-      nav {
-        width:100%;
-        a {
-          font-size: 1rem;
-          padding  : 0 auto;
-
-        }
-
-        a:hover {
-          font-size: inherit;
-        }
       }
     }
 
-    .fas {
-      text-align: center;
+    .bodycontainer {
+      section {
+        flex-direction: column;
+      }
+      section:nth-child(odd) {
+        flex-direction: column;
+      }
     }
-
   }
-
 }
+

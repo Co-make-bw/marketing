@@ -159,12 +159,10 @@ header .flexed {
   align-items: flex-end;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-size: 4rem;
 }
 header .flexed .fas {
   color: white;
-}
-header .flexed div {
-  font-size: 4rem;
 }
 header .flexed .breaker {
   width: 0px;
@@ -255,25 +253,31 @@ body .bodycontainer a button:hover {
   color: grey;
 }
 @media (max-width: 500px) {
-  header {
+  body header {
     background-color: orange;
   }
-  header .flexed div {
+  body header .flexed div {
     font-size: 2rem;
     text-align: center;
     margin: auto;
   }
-  header .flexed nav {
+  body header .flexed nav {
     width: 100%;
   }
-  header .flexed nav a {
+  body header .flexed nav a {
     font-size: 1rem;
     padding: 0 auto;
   }
-  header .flexed nav a:hover {
+  body header .flexed nav a:hover {
     font-size: inherit;
   }
-  header .fas {
+  body header .fas {
     text-align: center;
+  }
+  body .bodycontainer section {
+    flex-direction: column;
+  }
+  body .bodycontainer section:nth-child(odd) {
+    flex-direction: column;
   }
 }
