@@ -1,11 +1,12 @@
 @media(@mobile) {
   body {
-    .bodycontainer{
-      max-width:@bodywidthmobile;
+    .bodycontainer {
+      max-width : @bodywidthmobile;
       text-align: center;
     }
+
     header {
-      background-color: orange;
+      background-color: @themeprimarycolor;
 
       .flexed {
         div {
@@ -35,30 +36,37 @@
     }
 
     .bodycontainer {
+
+      p {
+        font-size: 1.5rem;
+      }
+
       section {
         flex-direction: column;
-        margin: 2rem 0;
+        margin        : 2rem 0;
 
-        .text-container{
+        .text-container {
           margin: 1rem 0;
         }
-        img{
-          padding:0
-          ;
+
+        img {
+          padding: 0;
         }
       }
+
       section:nth-child(odd) {
         flex-direction: column;
-        img{
-          padding:0;
+
+        img {
+          padding: 0;
         }
       }
     }
   }
 }
 
-footer{
+footer {
   text-align: center;
 
-  
+
 }
