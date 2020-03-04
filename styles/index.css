@@ -172,6 +172,7 @@ header .flexed .breaker {
 header .flexed nav {
   display: flex;
   justify-content: space-between;
+  flex-basis: 100%;
 }
 header .flexed a {
   font-size: 2rem;
@@ -260,9 +261,23 @@ body .bodycontainer a button {
 body .bodycontainer a button:hover {
   color: grey;
 }
+body .bodycontainer #red {
+  border-bottom: 0.15rem solid red;
+  padding: 0 0 2.15rem 0;
+}
+body .bodycontainer #yellow {
+  border-bottom: 0.15rem solid yellow;
+  padding: 0 0 2.5rem 0;
+}
+body .bodycontainer #green {
+  border-bottom: 0.15rem solid green;
+  padding: 0 0 2.5rem 0;
+}
 @media (max-width: 1024px) {
   body header .flexed .fas {
-    margin: 0 2rem 0 0;
+    margin: 0 2rem 1rem 0;
+    text-align: center;
+    width: 100%;
   }
   body header .flexed div {
     text-align: center;
@@ -272,19 +287,26 @@ body .bodycontainer a button:hover {
   body header .flexed nav {
     width: 100%;
     justify-content: space-around;
+    text-align: right;
   }
   body header .flexed nav a {
     font-size: 1rem;
     padding: 0 1rem;
   }
+  body .bodycontainer p {
+    font-size: 1rem;
+  }
+  body .bodycontainer section {
+    margin: 4rem 0;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   body .bodycontainer {
     max-width: 100%;
     text-align: center;
   }
   body header {
-    background-color: orange;
+    background-color: green;
   }
   body header .flexed div {
     font-size: 2rem;
@@ -304,6 +326,9 @@ body .bodycontainer a button:hover {
   body header .fas {
     text-align: center;
   }
+  body .bodycontainer p {
+    font-size: 1.5rem;
+  }
   body .bodycontainer section {
     flex-direction: column;
     margin: 2rem 0;
@@ -312,8 +337,7 @@ body .bodycontainer a button:hover {
     margin: 1rem 0;
   }
   body .bodycontainer section img {
-    padding: 0
-          ;
+    padding: 0;
   }
   body .bodycontainer section:nth-child(odd) {
     flex-direction: column;
