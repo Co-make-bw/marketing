@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: white;
+  color: green;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+p {
+  font-size: 1.5rem;
+}
+button {
+  background-color: lightgrey;
+  font-size: 2rem;
+  padding: 10px;
+}
+* {
+  border: 1px solid red !important;
+}
+header {
+  background-color: green;
+}
+header i {
+  color: white;
+}
+header .flexed {
+  white-space: pre;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 4rem;
+}
+header .flexed .fas {
+  color: white;
+}
+header .flexed .breaker {
+  width: 0px;
+  flex-basis: 100%;
+  height: 0px;
+}
+header .flexed nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .flexed a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  padding: 0 3rem;
+}
+header .flexed a:visited {
+  color: white;
+}
+header .flexed a:active {
+  color: white;
+}
+header .flexed a:hover {
+  font-size: 2.15rem;
+}
+header img {
+  width: 100%;
+}
+header .themespace {
+  flex-basis: 100%;
+  height: 1rem;
+}
+.footer {
+  margin: 2rem 0 0 0;
+}
+.footer img {
+  width: 100%;
+  max-height: 150px;
+  opacity: 40%;
+}
+body .bodycontainer {
+  max-width: 97%;
+  margin: auto;
+}
+body .bodycontainer .headline {
+  padding: 20rem;
+}
+body .bodycontainer section {
+  display: flex;
+  justify-content: space-between;
+  margin: 8rem 0;
+}
+body .bodycontainer section div {
+  background-color: #ffffff;
+}
+body .bodycontainer section img {
+  padding: 0 0 0 4rem;
+}
+body .bodycontainer section h2 {
+  padding: 2rem 0;
+}
+body .bodycontainer section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+body .bodycontainer section:nth-child(odd) div {
+  background-color: #e9e9e9;
+}
+body .bodycontainer section:nth-child(odd) img {
+  padding: 0 4rem 0 0;
+}
+body .bodycontainer .btn {
+  text-align: center;
+  margin: auto;
+}
+body .bodycontainer a {
+  text-align: center;
+  margin: auto;
+}
+body .bodycontainer a button {
+  color: white;
+  padding: 15px 25px;
+  background-color: green;
+  border-radius: 15px;
+  text-align: center;
+  margin: auto;
+}
+body .bodycontainer a button:hover {
+  color: grey;
+}
+@media (max-width: 500px) {
+  body .bodycontainer {
+    max-width: 100%;
+    text-align: center;
+  }
+  body header {
+    background-color: orange;
+  }
+  body header .flexed div {
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+  }
+  body header .flexed nav {
+    width: 100%;
+  }
+  body header .flexed nav a {
+    font-size: 1rem;
+    padding: 0 3px;
+  }
+  body header .flexed nav a:hover {
+    font-size: initial;
+  }
+  body header .fas {
+    text-align: center;
+  }
+  body .bodycontainer section {
+    flex-direction: column;
+  }
+  body .bodycontainer section img {
+    padding: 0;
+  }
+  body .bodycontainer section:nth-child(odd) {
+    flex-direction: column;
+  }
+  body .bodycontainer section:nth-child(odd) img {
+    padding: 0;
+  }
+}
+footer {
+  text-align: center;
+}
