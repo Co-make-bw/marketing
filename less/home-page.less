@@ -12,6 +12,7 @@ body {
       display        : flex;
       justify-content: space-between;
       margin         : 8rem 0;
+      height: 336px; // Seeing if this fixes different section size
 
       .text-container {
         // a flex child and a flex parent both
@@ -25,14 +26,14 @@ body {
       }
 
       .text-container {
-        padding: 0 0 0 1rem;
+        padding: 0 1rem;
       }
 
       .text-container:nth-child(even) {
         padding: 0 1rem 0 0;
       }
 
-      h2{
+      h2 {
         padding: 0 0 2rem 0
       }
     }
@@ -40,7 +41,7 @@ body {
     section:nth-child(odd) {
       flex-direction: row-reverse;
 
-      div {
+      .text-container {
         background-color: rgb(233, 233, 233); //rgb(248, 241, 232);
       }
 
