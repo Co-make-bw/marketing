@@ -302,6 +302,12 @@ body .bodycontainer #green {
     font-size: 1rem;
     padding: 0 1rem;
   }
+  body header .flexed nav a:hover {
+    font-size: initial;
+  }
+  body header .flexed nav a:active {
+    color: darkgray;
+  }
   body .bodycontainer p {
     font-size: 1rem;
   }
