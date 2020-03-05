@@ -139,6 +139,18 @@ h2 {
 p {
   font-size: 1.5rem;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+a:visited {
+  color: initial;
+}
+a:link {
+  color: initial;
+}
 button {
   background-color: lightgrey;
   font-size: 2rem;
@@ -220,12 +232,10 @@ body .bodycontainer section .text-container {
   background-color: #ffffff;
   display: flex;
   align-items: center;
+  padding: 0 1rem;
 }
 body .bodycontainer section img {
   padding: 0 0 0 4rem;
-}
-body .bodycontainer section .text-container {
-  padding: 0 1rem;
 }
 body .bodycontainer section .text-container:nth-child(even) {
   padding: 0 1rem 0 0;
@@ -287,7 +297,6 @@ body .bodycontainer #green {
   body header .flexed nav {
     width: 100%;
     justify-content: space-around;
-    text-align: right;
   }
   body header .flexed nav a {
     font-size: 1rem;
@@ -298,6 +307,9 @@ body .bodycontainer #green {
   }
   body .bodycontainer section {
     margin: 4rem 0;
+  }
+  body .bodycontainer section .text-container {
+    padding: 0.25rem 1rem;
   }
 }
 @media (max-width: 600px) {
