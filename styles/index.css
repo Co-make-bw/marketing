@@ -306,15 +306,45 @@ body .bodycontainer a button:hover {
 }
 body .bodycontainer #red {
   border-bottom: 0.15rem solid red;
-  padding: 0 0 2.15rem 0;
+  padding: 0 0 8rem 0;
+}
+@media (max-width: 1024px) {
+  body .bodycontainer #red {
+    padding: 0 0 4rem 0;
+  }
+}
+@media (max-width: 600px) {
+  body .bodycontainer #red {
+    padding: 0 0 2rem 0;
+  }
 }
 body .bodycontainer #green {
   border-bottom: 0.15rem solid green;
-  padding: 0 0 2.15rem 0;
+  padding: 0 0 8rem 0;
+}
+@media (max-width: 1024px) {
+  body .bodycontainer #green {
+    padding: 0 0 4rem 0;
+  }
+}
+@media (max-width: 600px) {
+  body .bodycontainer #green {
+    padding: 0 0 2rem 0;
+  }
 }
 body .bodycontainer #yellow {
   border-bottom: 0.15rem solid yellow;
-  padding: 0 0 2.15rem 0;
+  padding: 0 0 8rem 0;
+}
+@media (max-width: 1024px) {
+  body .bodycontainer #yellow {
+    padding: 0 0 4rem 0;
+  }
+}
+@media (max-width: 600px) {
+  body .bodycontainer #yellow {
+    padding: 0 0 2rem 0;
+  }
 }
 @media (max-width: 1024px) {
   body header .flexed .fas {
