@@ -7,6 +7,26 @@ body {
     .headline {
       padding: 20rem;
     }
+    
+    .dotholder{
+      margin: 0 3rem;
+      display:flex;
+      align-items: center;
+    }
+    .wingspan{  // for dots if they go below sections
+      // width:100%;
+      margin: 8rem 0 0 0;
+      display:flex;
+    }
+    #reddot {
+      .dot(red)
+    }
+    #greendot {
+      .dot(green)
+    }
+    #yellowdot {
+      .dot(yellow)
+    }
 
     section {
       display        : flex;
@@ -23,7 +43,7 @@ body {
       }
 
       img {
-        padding: 0 0 0 4rem;
+        padding: 0 0 0 0; //4rem;
       }
 
       .text-container:nth-child(even) {
@@ -43,7 +63,7 @@ body {
       }
 
       img {
-        padding: 0 3rem 0 0;
+        padding: 0; //3rem 0 0;
       }
     }
 
@@ -71,20 +91,27 @@ body {
     }
 
 
+    // #red {
+    //   border-bottom: .15rem solid red;
+
+    //   padding: 0 0 2.15rem 0;
+    // }
+
     #red {
-      border-bottom: .15rem solid red;
+    .colorline(red)
+  }
 
-      padding: 0 0 2.15rem 0;
-    }
+#green{.colorline(green)}
+#yellow{.colorline(yellow)}
 
-    #yellow {
-      border-bottom: .15rem solid yellow;
-      padding      : 0 0 2.5rem 0;
-    }
+    // #yellow {
+    //   border-bottom: .15rem solid yellow;
+    //   padding      : 0 0 2.5rem 0;
+    // }
 
-    #green {
-      border-bottom: .15rem solid green;
-      padding      : 0 0 2.5rem 0;
-    }
+    // #green {
+    //   border-bottom: .15rem solid green;
+    //   padding      : 0 0 2.5rem 0;
+    // }
   }
 }
