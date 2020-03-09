@@ -346,6 +346,15 @@ body .bodycontainer #yellow {
     padding: 0 0 2rem 0;
   }
 }
+body .window {
+  min-height: 275px;
+  width: 100%;
+  margin: auto;
+  background-image: url("../images/streetbanner.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 @media (max-width: 1024px) {
   body header .flexed .fas {
     margin: 0 2rem 1rem 0;
